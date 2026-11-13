@@ -52,7 +52,7 @@ test('scaffolds spec and defines with real content', async (t) => {
   assert.equal((await stat(result.packageDir)).isDirectory(), true)
 
   const onDiskSpec = await readFile(join(result.packageDir, 'spec'), 'utf8')
-  const onDiskDefines = await readFile(join(result.packageDir, 'autobuild/defines'), 'utf8')
+  const onDiskDefines = await readFile(join(result.packageDir, 'autobuild', 'defines'), 'utf8')
   assert.equal(onDiskSpec, result.spec)
   assert.equal(onDiskDefines, result.defines)
 

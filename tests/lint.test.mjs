@@ -34,7 +34,7 @@ async function makePackage(t, extra = {}) {
   }
   for (const [relative, content] of Object.entries(files)) {
     if (content === null) continue
-    const target = join(packageDir, relative)
+    const target = join(packageDir, ...relative.split('/'))
     await mkdir(dirname(target), { recursive: true })
     await writeFile(target, content, 'utf8')
   }
@@ -56,6 +56,18 @@ test('a clean package has no issues', async (t) => {
   assert.equal(result.infoCount, 0)
   assert.equal(result.ok, true)
   assert.deepEqual(result.issues, [])
+})
+
+test('CRLF spec and defines files parse without spurious issues', async (t) => {
+  const packageDir = await makePackage(t, {
+    spec: VALID_SPEC.replaceAll('\n', '\r\n'),
+    'autobuild/defines': VALID_DEFINES.replaceAll('\n', '\r\n'),
+  })
+  const result = await lintPackage({ dir: packageDir })
+
+  assert.equal(result.errorCount, 0)
+  assert.equal(result.warningCount, 0)
+  assert.equal(result.ok, true)
 })
 
 test('lowercase PKGDES triggers L008', async (t) => {

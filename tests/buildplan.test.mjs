@@ -53,12 +53,12 @@ test('notes cover Linux/root, disk, clean BuildKit, stable rebuild and p-vector'
 })
 
 test('topic defaults to the first package and workspace adds setup commands', () => {
-  const plan = buildPlan({ packages: ['nano'], workspace: '/home/packager/work' })
+  const plan = buildPlan({ packages: ['nano'], workspace: 'packager-work' })
   const commands = plan.phases.flatMap((phase) => phase.commands.map((command) => command.cmd))
 
   assert.ok(commands.includes('git checkout -b nano-update'))
-  assert.ok(commands.includes('mkdir -p /home/packager/work'))
-  assert.ok(commands.includes('cd /home/packager/work'))
+  assert.ok(commands.includes('mkdir -p packager-work'))
+  assert.ok(commands.includes('cd packager-work'))
 })
 
 test('stable rebuild repeats every package in the final phase', () => {

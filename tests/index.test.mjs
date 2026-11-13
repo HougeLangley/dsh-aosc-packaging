@@ -1,7 +1,7 @@
 import assert from 'node:assert/strict'
 import { mkdtemp, mkdir, rm, stat, writeFile } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
-import { dirname, join } from 'node:path'
+import { dirname, join, resolve } from 'node:path'
 import test from 'node:test'
 import { fileURLToPath } from 'node:url'
 
@@ -38,7 +38,7 @@ async function writePackage(t) {
     ].join('\n'),
   }
   for (const [relative, content] of Object.entries(files)) {
-    const target = join(packageDir, relative)
+    const target = join(packageDir, ...relative.split('/'))
     await mkdir(dirname(target), { recursive: true })
     await writeFile(target, content, 'utf8')
   }
@@ -179,7 +179,11 @@ test('the runtime skill registers with the contract metadata when present', asyn
   assert.equal(skill.name, 'aosc-packaging')
   assert.equal(skill.source, 'runtime')
   assert.equal(skill.resourceBase.kind, 'directory')
-  assert.equal(skill.resourceBase.path.endsWith(join('skills', 'aosc-packaging') + '/'), true)
+  assert.equal(
+    resolve(skill.resourceBase.path),
+    resolve(fileURLToPath(new URL('../skills/aosc-packaging/', import.meta.url))),
+    'resourceBase.path must resolve to the skills/aosc-packaging directory on every platform',
+  )
   assert.equal(skill.description, 'AOSC OS packaging: ABBS tree, Autobuild4 defines, Ciel BuildKit builds, topic workflow and release checks.')
   assert.equal(skill.whenToUse, 'Use when inspecting, linting, scaffolding or planning AOSC OS .deb packages and ABBS topics.')
   assert.ok(skill.content.length > 500)
