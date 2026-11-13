@@ -1,5 +1,7 @@
 # dsh-aosc-packaging
 
+[![CI](https://github.com/HougeLangley/dsh-aosc-packaging/actions/workflows/ci.yml/badge.svg)](https://github.com/HougeLangley/dsh-aosc-packaging/actions/workflows/ci.yml)
+
 面向 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)（`dsh`）的 AOSC OS 打包工具箱：六个 Host 工具负责检查、lint、脚手架与规划 ABBS / Autobuild4 包，外加一个自带 `aosc-packaging` 技能，覆盖从 topic 到发布的全流程。
 
 AOSC OS 用 Autobuild4、Ciel 与 BuildKit 从 [ABBS 树](https://github.com/AOSC-Dev/aosc-os-abbs)构建 `.deb` 包，流程散落在多份手册里。本插件把同一份地图收进一个技能，并用确定性工具兜底：agent 可以读取包、指出样式规则会拒绝什么、生成脚手架、计算源码校验和，并起草分支名、提交信息、PR 正文与 BuildIt! 命令，而不是靠猜。

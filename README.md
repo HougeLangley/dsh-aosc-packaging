@@ -1,5 +1,7 @@
 # dsh-aosc-packaging
 
+[![CI](https://github.com/HougeLangley/dsh-aosc-packaging/actions/workflows/ci.yml/badge.svg)](https://github.com/HougeLangley/dsh-aosc-packaging/actions/workflows/ci.yml)
+
 AOSC OS packaging toolkit for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) (`dsh`): six Host tools that inspect, lint, scaffold and plan ABBS / Autobuild4 packages, plus a bundled `aosc-packaging` skill that carries the topic-to-release workflow.
 
 AOSC OS builds `.deb` packages from the [ABBS tree](https://github.com/AOSC-Dev/aosc-os-abbs) with Autobuild4, Ciel and BuildKit. That procedure is spread across several manuals. This bundle puts the same map into one skill and backs it with deterministic tools, so an agent can read a package, say what the style rules would reject, write a scaffold, checksum a source, and draft the branch, commit, PR body and BuildIt! commands instead of guessing.
