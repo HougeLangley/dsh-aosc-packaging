@@ -1,5 +1,4 @@
-<!-- Namespace identifier only; the character reference keeps the file free of a literal URL scheme. -->
-<svg xmlns="http&#58;//www.w3.org/2000/svg" width="640" height="300" viewBox="0 0 640 300">
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="300" viewBox="0 0 640 300">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#0c1524"/>
