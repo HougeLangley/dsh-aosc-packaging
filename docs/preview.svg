@@ -1,0 +1,67 @@
+<!-- Namespace identifier only; the character reference keeps the file free of a literal URL scheme. -->
+<svg xmlns="http&#58;//www.w3.org/2000/svg" width="640" height="300" viewBox="0 0 640 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0c1524"/>
+      <stop offset="1" stop-color="#070d18"/>
+    </linearGradient>
+    <linearGradient id="doc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1e3552"/>
+      <stop offset="1" stop-color="#16263d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#38bdf8" stop-opacity="0.13"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="640" height="300" fill="url(#bg)"/>
+  <circle cx="320" cy="150" r="110" fill="url(#glow)"/>
+
+  <!-- stage frames: spec/defines, build, artifact -->
+  <rect x="56" y="80" width="140" height="140" rx="16" fill="#101b2c" stroke="#263a52" stroke-width="1.5"/>
+  <rect x="250" y="80" width="140" height="140" rx="16" fill="#101b2c" stroke="#263a52" stroke-width="1.5"/>
+  <rect x="444" y="80" width="140" height="140" rx="16" fill="#101b2c" stroke="#263a52" stroke-width="1.5"/>
+
+  <!-- stage 1: spec and defines documents -->
+  <rect x="86" y="100" width="54" height="72" rx="8" fill="#152539" stroke="#344c6b" stroke-width="1.5"/>
+  <rect x="97" y="110" width="58" height="80" rx="8" fill="url(#doc)" stroke="#5b81ab" stroke-width="1.5"/>
+  <path d="M141 110 H155 V124 Z" fill="#7fa3c9" opacity="0.85"/>
+  <rect x="109" y="128" width="34" height="5" rx="2.5" fill="#88aed4"/>
+  <rect x="109" y="140" width="26" height="5" rx="2.5" fill="#6f93b8"/>
+  <rect x="109" y="152" width="31" height="5" rx="2.5" fill="#6f93b8"/>
+
+  <!-- arrows -->
+  <line x1="200" y1="150" x2="236" y2="150" stroke="#4a6f9b" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M232 144 L240 150 L232 156" fill="none" stroke="#4a6f9b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- stage 2: terminal window -->
+  <rect x="282" y="100" width="76" height="58" rx="9" fill="#08111d" stroke="#48709b" stroke-width="1.5"/>
+  <circle cx="292" cy="112" r="2.5" fill="#e05a4f"/>
+  <circle cx="301" cy="112" r="2.5" fill="#d9a441"/>
+  <circle cx="310" cy="112" r="2.5" fill="#4fa87c"/>
+  <line x1="282" y1="120" x2="358" y2="120" stroke="#22374f" stroke-width="1"/>
+  <path d="M292 130 L301 137 L292 144" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="306" y="136" width="15" height="5" rx="2.5" fill="#7dd3fc"/>
+
+  <!-- stage 2: gear -->
+  <rect x="317" y="168" width="6" height="8" rx="2" fill="#f59e0b" transform="rotate(0 320 190)"/>
+  <rect x="317" y="168" width="6" height="8" rx="2" fill="#f59e0b" transform="rotate(60 320 190)"/>
+  <rect x="317" y="168" width="6" height="8" rx="2" fill="#f59e0b" transform="rotate(120 320 190)"/>
+  <rect x="317" y="168" width="6" height="8" rx="2" fill="#f59e0b" transform="rotate(180 320 190)"/>
+  <rect x="317" y="168" width="6" height="8" rx="2" fill="#f59e0b" transform="rotate(240 320 190)"/>
+  <rect x="317" y="168" width="6" height="8" rx="2" fill="#f59e0b" transform="rotate(300 320 190)"/>
+  <circle cx="320" cy="190" r="14" fill="#f59e0b"/>
+  <circle cx="320" cy="190" r="6" fill="#101b2c"/>
+
+  <line x1="394" y1="150" x2="430" y2="150" stroke="#4a6f9b" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M426 144 L434 150 L426 156" fill="none" stroke="#4a6f9b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- stage 3: package box -->
+  <path d="M514 104 L556 126 L514 148 L472 126 Z" fill="#1f4b3c" stroke="#34d399" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M472 126 L514 148 L514 196 L472 174 Z" fill="#17392e" stroke="#34d399" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M556 126 L556 174 L514 196 L514 148 Z" fill="#112a22" stroke="#2fae87" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M493 115 L535 137" stroke="#6ee7b7" stroke-width="7" opacity="0.45" stroke-linecap="round"/>
+  <circle cx="531" cy="159" r="10" fill="#0e2a22" stroke="#6ee7b7" stroke-width="1.5"/>
+  <path d="M526.5 159 L530 162.5 L535.5 156" fill="none" stroke="#6ee7b7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

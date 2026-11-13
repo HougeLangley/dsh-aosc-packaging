@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "AOSC OS packaging",
+    "description": "AOSC OS packaging for DeepSeek Harness. Six Host tools cover the loop: aosc_inspect_package and aosc_lint_package read an ABBS package and report rule violations offline; aosc_scaffold_package writes spec and autobuild/defines into a tree you name; aosc_checksum_source is the only tool that uses the network, hashing the URLs you pass as a stream without saving them; aosc_topic_plan drafts the branch, commit message, PR body and BuildIt! commands; aosc_build_plan returns the ordered Ciel, oma and p-vector commands and writes nothing. The bundled aosc-packaging skill carries the ABBS, Autobuild4 and p-vector workflow. No tool spawns a shell, and producing an actual .deb still requires a Linux host with root, Ciel and about 10 GiB of free disk.",
+    "detail": "docs/DETAIL.md"
+  }
+}

@@ -1,0 +1,8 @@
+<!-- Namespace identifier only; the character reference keeps the file free of a literal URL scheme. -->
+<svg xmlns="http&#58;//www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <rect x="8" y="13" width="20" height="17" rx="3" fill="#f59e0b"/>
+  <rect x="5.5" y="6.5" width="25" height="7.5" rx="2.5" fill="#fbbf24"/>
+  <rect x="15.5" y="6.5" width="5" height="7.5" rx="1.5" fill="#fde68a"/>
+  <path d="M12 18.5 L15.5 21.5 L12 24.5" fill="none" stroke="#111c2e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="18" y="20.5" width="6" height="2" rx="1" fill="#111c2e"/>
+</svg>

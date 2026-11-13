@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "AOSC OS 打包",
+    "description": "面向 DeepSeek Harness 的 AOSC OS 打包工具。六个 Host 工具覆盖完整闭环：aosc_inspect_package 与 aosc_lint_package 离线读取 ABBS 包并报告规则违规；aosc_scaffold_package 在你指定的 tree 内写入 spec 与 autobuild/defines；aosc_checksum_source 是唯一联网的工具，以流式方式对你传入的 URL 计算哈希且不落盘；aosc_topic_plan 起草分支、提交信息、PR 正文与 BuildIt! 命令；aosc_build_plan 返回有序的 Ciel、oma 与 p-vector 命令且不写任何文件。配套的 aosc-packaging 技能覆盖 ABBS、Autobuild4 与 p-vector 流程。所有工具都不启动 shell，真正产出 .deb 仍需要 Linux 主机、root、Ciel 与约 10 GiB 空闲磁盘。",
+    "detail": "docs/DETAIL.md"
+  }
+}
