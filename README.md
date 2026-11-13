@@ -13,7 +13,7 @@ Nothing here runs a shell. Five tools never write to disk; `aosc_checksum_source
 | Requirement | Detail |
 | --- | --- |
 | Node.js | 22 or newer. ESM only, no build step, no runtime dependencies. |
-| Host | A dsh build that loads bundles through the `dsh.bundle` manifest. |
+| Host | DSH `0.2.1-rc.5` or newer in the `0.2.x` line; the bundle loads through the `dsh.bundle` manifest. |
 | Client OS | All six tools run on macOS, Windows and Linux. |
 | Real builds | Linux + root + Ciel + at least 10 GiB of free disk. |
 

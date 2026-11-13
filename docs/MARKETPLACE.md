@@ -1,6 +1,6 @@
 # Marketplace submission
 
-Status: **submitted on 2026-11-13 as [PR #15010](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/15010).** One gate is still open: the list requires the submitted repository to be at least one day old, and this repository was created the same day. The PR stays accurate; the gate can pass after 2026-11-14, or a maintainer can re-run it. Nothing here claims the bundle is already listed or indexed.
+Status: **submitted on 2026-11-13 as [PR #15010](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin/pull/15010).** One gate is still open: the list requires the submitted repository to be at least one day old, and this repository was created the same day. The PR stays accurate; the gate can pass after 2026-11-14, or a maintainer can re-run it. Nothing here claims the bundle is already listed or indexed. 0.1.1 widens the host range to DSH `0.2.1-rc.5` after 0.1.0 was rejected by that host before installation.
 
 The target is [awesome-dsh-plugin/awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin), the curated dsh plugin list whose category **Tools & Capabilities** is the right home for a Host-tool bundle. The list doubles as a plugin market index; see [Discover index](#discover-index) below.
 
@@ -23,7 +23,7 @@ category: tools
 description:
   en: 'AOSC OS packaging toolkit for DeepSeek Harness: six Host tools inspect and lint ABBS packages, scaffold spec and autobuild/defines inside an ABBS tree, checksum source URLs, and draft topics and Ciel build plans, with a bundled aosc-packaging skill; no tool runs a shell, and building the .deb still needs Linux with root and Ciel.'
   zh: '面向 DeepSeek Harness 的 AOSC OS 打包工具箱：六个 Host 工具检查并 lint ABBS 包、在 ABBS 树内生成 spec 与 autobuild/defines 脚手架、校验源码 URL，并起草 topic 与 Ciel 构建计划，另带一个 aosc-packaging 技能；工具都不启动 shell，真正构建 .deb 仍需要 Linux、root 与 Ciel。'
-tarball: https://github.com/HougeLangley/dsh-aosc-packaging/releases/download/v0.1.0/dsh-aosc-packaging-0.1.0.tgz
+tarball: https://github.com/HougeLangley/dsh-aosc-packaging/releases/download/v0.1.1/dsh-aosc-packaging-0.1.1.tgz
 ```
 
 Notes on the format:
@@ -84,7 +84,7 @@ The same document is published at `https://awesome-dsh-plugin.com/index.json` an
 
 Two consequences for this bundle:
 
-- The index covers plugins published on npm with a known version. At 0.1.0 this bundle is distributed from GitHub, so expect the list entry to install through the `github:` command shown beside it; Discover search coverage requires an npm release with a known version.
+- The index covers plugins published on npm with a known version. At 0.1.1 this bundle is distributed from GitHub, so expect the list entry to install through the `github:` command shown beside it; Discover search coverage requires an npm release with a known version.
 - Being merged into the list is not the same as being indexed in Discover. Do not claim either until both have happened.
 
 ## Pre-listing checklist
@@ -97,7 +97,7 @@ Two consequences for this bundle:
 - [x] No UI, settings page, shell execution, automatic build, automatic PR or ABBS publishing is claimed
 - [x] `locale/en.json` and `locale/zh.json` parse and describe the same six tools, the skill, the read-only/network boundary and the Linux build requirement
 - [x] `docs/DETAIL.md` is one image line and `docs/preview.svg` is a self-contained 640×300 illustration
-- [x] `LICENSE` is MIT and `CHANGELOG.md` records 0.1.0
+- [x] `LICENSE` is MIT and `CHANGELOG.md` records 0.1.1
 - [ ] Repository is at least one day old (a list requirement) — created 2026-11-13; submitted the same day
 - [x] One PR, one entry; split any additional entries into their own PRs
 - [x] Nothing in the submission says the bundle is already listed, indexed or reviewed

@@ -13,7 +13,7 @@ AOSC OS 用 Autobuild4、Ciel 与 BuildKit 从 [ABBS 树](https://github.com/AOS
 | 要求 | 说明 |
 | --- | --- |
 | Node.js | 22 或更新。仅 ESM，无构建步骤，无运行时依赖。 |
-| Host | 能通过 `dsh.bundle` manifest 加载 bundle 的 dsh 版本。 |
+| Host | DSH `0.2.1-rc.5` 或更高的 `0.2.x` 版本；通过 `dsh.bundle` manifest 加载。 |
 | 客户端系统 | 六个工具在 macOS、Windows、Linux 上都能运行。 |
 | 真实构建 | Linux + root + Ciel + 至少 10 GiB 空闲磁盘。 |
 
