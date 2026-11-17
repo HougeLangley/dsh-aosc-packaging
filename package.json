@@ -1,6 +1,6 @@
 {
   "name": "dsh-aosc-packaging",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "AOSC OS packaging toolkit for DeepSeek Harness: inspect, lint, scaffold and plan .deb packages built with ABBS, Autobuild4 and Ciel.",
   "type": "module",
   "main": "./lib/index.js",
